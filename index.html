@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>Meu Primeiro Site</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estoque</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Olá, eu sou o Vinicius!</h1>
-    <p>Meu site está online pelo GitHub!</p>
+
+<h1>Controle de Estoque</h1>
+
+<div class="menu">
+    <button onclick="mostrar('blocos')">Blocos</button>
+    <button onclick="mostrar('salas')">Salas</button>
+    <button onclick="mostrar('equipamentos')">Equipamentos</button>
+</div>
+
+<div id="blocos">
+    <h2>Cadastrar Bloco</h2>
+    <input type="text" id="nomeBloco" placeholder="Ex: Bloco 1">
+    <button onclick="adicionarBloco()">Salvar</button>
+    <ul id="listaBlocos"></ul>
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
